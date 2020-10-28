@@ -33,20 +33,29 @@ header{
 .info{
   text-decoration: none;
   color: rgb(85, 87, 89);
-   margin-top: 1px;
   font-size: 20px;
 }
 .info:hover{
   color: black;
 }
 .dropdown-menu{
-  display: none;
+  position: absolute;
+top: 50px;
+right: 100;
+width: 120px;
+height: 250px;
+background-color: white;
+padding: 10px;
+display: none;
 }
 .menu li{
   display: inline-block;
-  margin-right: 15px;
+  margin-right: 35px;
   text-decoration:none;
   color: rgb(85, 87, 89);
+}
+.menu li:hover{
+  color: black;
 }
 a{
   text-decoration:none;

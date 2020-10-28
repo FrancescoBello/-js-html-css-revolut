@@ -2,12 +2,21 @@
 $(document).ready(function() {
 
 
- $('.menu').mouseenter(function() {
-         $('.dropdown-menu').addClass('active');
+ $('.menu li').mouseenter(function() {
+
+      console.log('mouseenter');
+         //$('.dropdown-menu').addClass('active');
+
+         // this -> elemento che ha scatenato l'evento
+         // children, find -> per trovare un figlio dentro un elemenot
+         $(this).children('.dropdown-menu').show();
      });
 
-     $('.list').mouseleave(function() {
-         $('.dropdown-menu').removeClass('active');
-     });
+  $('.menu li').mouseleave(function() {
+
+
+       $('.dropdown-menu').hide;
+    //$('.dropdown-menu').removeClass('active');
+   });
 
 });
