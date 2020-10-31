@@ -2,7 +2,7 @@
 $(document).ready(function() {
 
 
- $('.menu li').mouseenter(function() {
+ $('.menu ').mouseenter(function() {
 
       console.log('mouseenter');
          //$('.dropdown-menu').addClass('active');
@@ -10,12 +10,14 @@ $(document).ready(function() {
          // this -> elemento che ha scatenato l'evento
          // children, find -> per trovare un figlio dentro un elemenot
          $(this).children('.dropdown-menu').show();
+         //.show();
      });
 
-  $('.menu li').mouseleave(function() {
+  $('.menu ').mouseleave(function() {
 
+    $(this).children('.dropdown-menu').hide();
 
-       $('.dropdown-menu').hide;
+    //   $('.dropdown-menu').hide;
     //$('.dropdown-menu').removeClass('active');
    });
 

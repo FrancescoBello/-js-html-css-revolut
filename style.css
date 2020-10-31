@@ -48,13 +48,14 @@ background-color: white;
 padding: 10px;
 display: none;
 }
-.menu li{
+
+.menu {
   display: inline-block;
   margin-right: 35px;
   text-decoration:none;
   color: rgb(85, 87, 89);
 }
-.menu li:hover{
+.menu :hover{
   color: black;
 }
 a{
